@@ -462,7 +462,7 @@ function ServerEditor(props: {
 
                     <div className="space-y-4 rounded-xl border p-4">
                         <FieldLabel help={fh("cloudPool")} className="w-fit text-sm font-medium">
-                            {ft("cloudPool", "Cloud connection pool")}
+                            {ft("cloudPool", "Cloud service connection pool")}
                         </FieldLabel>
                         <ApiConnectionPoolFields
                             idPrefix={`${idPrefix}-cloudPool`}
@@ -615,7 +615,7 @@ export default function AgentServerConfigModule() {
             const pool = fieldsToConnection(s.cloudPool, s.model.cloudPool ?? {});
             if (!pool.ok) {
                 toast.error(
-                    `${pool.badField} for the cloud pool of "${s.name.trim()}" must be 0 or more.`,
+                    `${pool.badField} for the cloud service connection pool of "${s.name.trim()}" must be 0 or more.`,
                 );
                 return false;
             }

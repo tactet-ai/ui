@@ -3,7 +3,7 @@
  * Do not edit manually.
  * Search2o
  * Search2o Agent Server
- * OpenAPI spec version: 0.2.0
+ * OpenAPI spec version: 0.12.5
  */
 import type {
   AccountModel,

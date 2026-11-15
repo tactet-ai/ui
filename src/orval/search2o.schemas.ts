@@ -3,7 +3,7 @@
  * Do not edit manually.
  * Search2o
  * Search2o Agent Server
- * OpenAPI spec version: 0.2.0
+ * OpenAPI spec version: 0.12.5
  */
 /**
  * Structured details about the error, when there are any.
@@ -150,7 +150,7 @@ export type LlmModelHeaders = {[key: string]: ExprString};
 export type LlmModelQueryParams = {[key: string]: ExprString};
 
 export interface LlmModel {
-  /** The secret names this profile's expressions read (sys.secret['NAME']). Worked out by the cloud when the profile is saved and sent with the profile to agent servers; anything sent in this field is ignored. */
+  /** The secret names this profile's expressions read (sys.secret['NAME']). Worked out by the cloud service when the profile is saved and sent with the profile to agent servers; anything sent in this field is ignored. */
   secretsUsed?: string[];
   /**
      * The name this profile is referred to by, in agents and in other configuration.
@@ -221,7 +221,7 @@ export type ApiServerModelHeaders = {[key: string]: ValueModel};
 export type ApiServerModelQueryParams = {[key: string]: ValueModel};
 
 export interface ApiServerModel {
-  /** The secret names this profile's expressions read (sys.secret['NAME']). Worked out by the cloud when the profile is saved and sent with the profile to agent servers; anything sent in this field is ignored. */
+  /** The secret names this profile's expressions read (sys.secret['NAME']). Worked out by the cloud service when the profile is saved and sent with the profile to agent servers; anything sent in this field is ignored. */
   secretsUsed?: string[];
   /**
      * The name this profile is referred to by, in agents and in other configuration.
@@ -262,7 +262,7 @@ export interface ApiServerModel {
 export type McpServerModelHeaders = {[key: string]: ExprString};
 
 export interface McpServerModel {
-  /** The secret names this profile's expressions read (sys.secret['NAME']). Worked out by the cloud when the profile is saved and sent with the profile to agent servers; anything sent in this field is ignored. */
+  /** The secret names this profile's expressions read (sys.secret['NAME']). Worked out by the cloud service when the profile is saved and sent with the profile to agent servers; anything sent in this field is ignored. */
   secretsUsed?: string[];
   /** Identifies which configuration part this is. */
   type?: 'mcp';
@@ -324,7 +324,7 @@ export interface DbConnectionPool {
 }
 
 export interface DbConnectionModel {
-  /** The secret names this profile's expressions read (sys.secret['NAME']). Worked out by the cloud when the profile is saved and sent with the profile to agent servers; anything sent in this field is ignored. */
+  /** The secret names this profile's expressions read (sys.secret['NAME']). Worked out by the cloud service when the profile is saved and sent with the profile to agent servers; anything sent in this field is ignored. */
   secretsUsed?: string[];
   /**
      * The name this profile is referred to by, in agents and in other configuration.
@@ -1001,7 +1001,7 @@ export interface AgentServerModel {
   openapiUrl?: string | null;
   /** Logging configuration for the agent server. */
   logs?: AgentServerModelLogs;
-  /** How this agent server connects to Search2o Cloud. It carries connection settings only: it is deliberately not one of the API connection pools, and it has no certificate fields, so nothing configured for an agent can change how this server reaches Search2o Cloud. A server behind a proxy that re-signs TLS trusts that proxy through the SSL_CERT_FILE environment variable, which is where a machine-wide trust setting belongs. Changing any of this needs an agent server restart. */
+  /** How this agent server connects to the cloud service. It carries connection settings only: it is deliberately not one of the API connection pools, and it has no certificate fields, so nothing configured for an agent can change how this server reaches the cloud service. A server behind a proxy that re-signs TLS trusts that proxy through the SSL_CERT_FILE environment variable, which is where a machine-wide trust setting belongs. Changing any of this needs an agent server restart. */
   cloudPool?: ConnectionPoolModel;
   /** A free form JSON configuration that is sent to the UI from the getUiConfig call. */
   uiConfig?: AgentServerModelUiConfig;
@@ -1337,7 +1337,7 @@ export interface OidcAuthModel {
      */
   returnUrl: string;
   /**
-     * The client secret the provider issued for this registration. Search2o Cloud uses it to exchange a sign-in code for tokens; it is encrypted at rest and never returned. Leave it empty on an update to keep the stored one.
+     * The client secret the provider issued for this registration. The cloud service uses it to exchange a sign-in code for tokens; it is encrypted at rest and never returned. Leave it empty on an update to keep the stored one.
      * @maxLength 2000
      */
   clientSecret?: string;
@@ -1582,7 +1582,7 @@ export interface HooksModel {
   onAgentPublish?: string | null;
   /** Called after an agent is deleted, with its name. If it raises, the caller gets an error that says the agent was deleted. */
   onAgentDelete?: string | null;
-  /** Stores a conversation's state, given convid, state, userEmail and agentName. The state is not encrypted by this server, and ownership is not checked by Search2o Cloud. Validation runs keep their state in Search2o Cloud. Set together with restore and deleteConversation. */
+  /** Stores a conversation's state, given convid, state, userEmail and agentName. The state is not encrypted by this server, and ownership is not checked by the cloud service. Validation runs keep their state in the cloud service. Set together with restore and deleteConversation. */
   save?: string | null;
   /** Returns the state stored by save for a convid, or None when there is none. It also receives userEmail, so it can check who owns the conversation. Set together with save and deleteConversation. */
   restore?: string | null;

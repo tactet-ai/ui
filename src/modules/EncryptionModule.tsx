@@ -245,7 +245,7 @@ export function EncryptionSection({
                             <SelectValue placeholder="Select encryption source" />
                         </SelectTrigger>
                         <SelectContent>
-                            <SelectItem value="cloud">Cloud</SelectItem>
+                            <SelectItem value="cloud">Cloud service</SelectItem>
                             <SelectItem value="client">Client</SelectItem>
                         </SelectContent>
                     </Select>

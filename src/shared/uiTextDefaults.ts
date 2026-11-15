@@ -274,7 +274,7 @@ export const UI_TEXT_DEFAULTS = {
     "empty.draftPrompts": "No prompts yet. An llm command needs one to name.",
 
     "const.help":
-        "A JSON object the agent reads as const, for example const.region. It is stored encrypted, so the cloud cannot read it.",
+        "A JSON object the agent reads as const, for example const.region. It is stored encrypted, so the cloud service cannot read it.",
     "const.publishedHelp":
         "Changed only in a draft. A change takes effect when the draft is published.",
     "empty.agentConst": "This agent has no const.",
@@ -324,7 +324,7 @@ export const UI_TEXT_DEFAULTS = {
     "sysVariables.userSession":
         "A hashed value of the session ID of the user in the agent server. This can be used to store data that is specific to the current user session.",
     "sysVariables.serverIp":
-        "IP address of the agent server as seen by the cloud. This can be used in logging server specific activity.",
+        "IP address of the agent server as seen by the cloud service. This can be used in logging server specific activity.",
     "sysVariables.cookies":
         "User cookies in the request. These can expose the raw session ID of the user and other secret values. Turn it on only where an agent needs them.",
     "sysVariables.removeTitle": "Turn off %names%?",
