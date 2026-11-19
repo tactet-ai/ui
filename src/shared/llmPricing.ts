@@ -1,4 +1,4 @@
-import type { ModelDetails } from "@/orval/search2o.schemas";
+import type { ModelDetails } from "@/orval/tactet.schemas";
 
 export const PRICE_FIELDS = [
     { key: "inputText", label: "Input text" },

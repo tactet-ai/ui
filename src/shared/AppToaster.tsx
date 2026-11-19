@@ -4,9 +4,9 @@ import { useUiConfig } from "@/shared/uiConfig";
 import { toastsSuppressed } from "@/shared/sessionExpiry";
 
 function suppressToastsDuringSignOut() {
-    const guarded = toast as unknown as { __s2oGuarded?: boolean };
-    if (guarded.__s2oGuarded) return;
-    guarded.__s2oGuarded = true;
+    const guarded = toast as unknown as { __tactetGuarded?: boolean };
+    if (guarded.__tactetGuarded) return;
+    guarded.__tactetGuarded = true;
 
     type LooseToast = (...args: unknown[]) => string | number;
 

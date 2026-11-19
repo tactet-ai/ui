@@ -1,4 +1,4 @@
-import { ServiceLevel, type UserRole } from "@/orval/search2o.schemas";
+import { ServiceLevel, type UserRole } from "@/orval/tactet.schemas";
 import * as UI from "@/shared/uistate";
 import { isBilled } from "@/shared/serviceLevel";
 

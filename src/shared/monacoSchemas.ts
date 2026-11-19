@@ -32,7 +32,7 @@ const SCHEMA_URI = "inmemory://model/agent.schema.json";
 let inlineProviderDisposable: monacoT.IDisposable | null = null;
 let reindentCommandDisposable: monacoT.IDisposable | null = null;
 
-const REINDENT_LINE_COMMAND = "s2o.reindentCompletedLine";
+const REINDENT_LINE_COMMAND = "tactet.reindentCompletedLine";
 
 export function ensureMonacoSchemas(monaco: typeof monacoT): void {
     const agentSchema = getCachedAgentSchema();

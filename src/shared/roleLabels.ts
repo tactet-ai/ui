@@ -1,4 +1,4 @@
-import type { UserRole } from "@/orval/search2o.schemas";
+import type { UserRole } from "@/orval/tactet.schemas";
 
 export const ROLE_LABELS: Record<UserRole, string> = {
     user: "User",

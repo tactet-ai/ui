@@ -1,5 +1,5 @@
 import { type ReactNode, type RefObject, useEffect, useRef, useState } from "react";
-import * as API from "@/orval/search2o";
+import * as API from "@/orval/tactet";
 import type {
     AuthModel,
     BuiltinAuthModel,
@@ -9,8 +9,8 @@ import type {
     EmailFormat,
     OidcAuthModel,
     PasswordModel,
-} from "@/orval/search2o.schemas";
-import { SsoProvisioning } from "@/orval/search2o.schemas";
+} from "@/orval/tactet.schemas";
+import { SsoProvisioning } from "@/orval/tactet.schemas";
 import {
     AlertDialog,
     AlertDialogAction,

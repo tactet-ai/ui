@@ -1,4 +1,4 @@
-import type { UserRole } from "@/orval/search2o.schemas";
+import type { UserRole } from "@/orval/tactet.schemas";
 import { Mail, NotebookText, Logs, Search } from "lucide-react";
 import {
     SCHEMATIC,

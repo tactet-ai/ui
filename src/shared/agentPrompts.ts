@@ -1,5 +1,5 @@
-import type { AgentPromptModel } from "@/orval/search2o.schemas";
-import { PromptScope } from "@/orval/search2o.schemas";
+import type { AgentPromptModel } from "@/orval/tactet.schemas";
+import { PromptScope } from "@/orval/tactet.schemas";
 import { matchesRule, PROMPT_NAME, PROMPT_TEXT, textFieldsError } from "@/shared/schemaRules";
 import { uiText } from "@/shared/uiText";
 

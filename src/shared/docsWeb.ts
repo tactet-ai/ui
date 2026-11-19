@@ -1,5 +1,5 @@
-import * as API from "@/orval/search2o";
-import type { DocsWebType } from "@/orval/search2o.schemas";
+import * as API from "@/orval/tactet";
+import type { DocsWebType } from "@/orval/tactet.schemas";
 import { applyPublishedText } from "@/shared/uiText";
 
 type Entry<T> = {

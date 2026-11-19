@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from "react";
-import * as API from "@/orval/search2o";
-import type { IntegrationTokenModel } from "@/orval/search2o.schemas";
+import * as API from "@/orval/tactet";
+import type { IntegrationTokenModel } from "@/orval/tactet.schemas";
 import { toast } from "sonner";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";

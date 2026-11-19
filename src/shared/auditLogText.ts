@@ -1,4 +1,4 @@
-import type { AuditLogModel } from "@/orval/search2o.schemas";
+import type { AuditLogModel } from "@/orval/tactet.schemas";
 
 const ACRONYMS: Record<string, string> = {
     api: "API",

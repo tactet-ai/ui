@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState } from "react";
-import * as API from "@/orval/search2o";
+import * as API from "@/orval/tactet";
 import * as UI from "@/shared/uistate";
 import { BackButton } from "@/shared/BackButton";
 import { toast } from "sonner";
@@ -25,7 +25,7 @@ import {
     AlertDialogTitle,
 } from "@/components/ui/alert-dialog";
 import { BarChart3, Trash2 } from "lucide-react";
-import type { UserModel, UserRole } from "@/orval/search2o.schemas";
+import type { UserModel, UserRole } from "@/orval/tactet.schemas";
 import { ModuleCardTitle } from "@/shared/ModuleCardTitle";
 import { HoverTip } from "@/shared/HoverTip";
 import { resetPagedList } from "@/shared/pagedList";

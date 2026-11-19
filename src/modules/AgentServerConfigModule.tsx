@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { HoverTip } from "@/shared/HoverTip";
-import * as API from "@/orval/search2o";
+import * as API from "@/orval/tactet";
 import {
     AgentServerRoute,
     type AgentServerModel,
@@ -9,7 +9,7 @@ import {
     type AgentServerModels,
     type AgentServerModelsServers,
     type ConfigPartResponseModel,
-} from "@/orval/search2o.schemas";
+} from "@/orval/tactet.schemas";
 
 import { Card, CardHeader, CardContent } from "@/components/ui/card";
 import { Label } from "@/components/ui/label";

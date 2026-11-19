@@ -1,7 +1,7 @@
 export const UI_TEXT_DEFAULTS = {
     "support.responseTime":
         "You will receive a response from {support.email} within 1 to 3 business days.",
-    "support.email": "support@search2o.com",
+    "support.email": "support@tactet.com",
 
     "upgrade.paid.unavailable": "Paid plans are not available yet.",
     "upgrade.paid.confirmTitle": "Move this account to the paid plan?",
@@ -26,13 +26,13 @@ export const UI_TEXT_DEFAULTS = {
         "This invoice is for informational purposes only. This account is not charged.",
     "invoice.nothingCharged": "Nothing has been charged in this period.",
 
-    "docs.url": "https://search2o.com/docs",
+    "docs.url": "https://tactet.com/docs",
     "docs.disclaimer": "AI-generated. Verify against",
     "docs.disclaimerLinkText": "the documentation",
     "docs.placeholder": "e.g., How do I use the ask command inside a while loop?",
-    "docs.heading": "Search2o documentation",
+    "docs.heading": "Tactet documentation",
     "docs.subheading":
-        "Ask how Search2o itself works. Answers come from the product documentation — this does not search your agents or your data.",
+        "Ask how Tactet itself works. Answers come from the product documentation — this does not search your agents or your data.",
     "docs.tooShort": "Say a little more about what you want to know.",
     "docs.emptyAnswer": "Nothing came back. Try asking the question a different way.",
 
@@ -100,11 +100,11 @@ export const UI_TEXT_DEFAULTS = {
     "placeholder.mustBeSpecified": "Must be specified",
     "placeholder.optional": "optional",
 
-    "welcome.title": "Welcome to Search2o",
+    "welcome.title": "Welcome to Tactet",
     "welcome.subtitle": "Here is where everything is.",
     "welcome.ask.title": "Ask a question",
     "welcome.ask.body":
-        "Type what you want to know. Search2o picks the agent that answers it and runs it for you.",
+        "Type what you want to know. Tactet picks the agent that answers it and runs it for you.",
     "welcome.searches.title": "Your searches",
     "welcome.searches.body":
         "Every conversation is kept here. Pin the ones you come back to, and pick up where you left off.",
@@ -133,7 +133,7 @@ export const UI_TEXT_DEFAULTS = {
         "What changed and who changed it — agents published, configuration updated.",
     "welcome.icon.docs.title": "Docs",
     "welcome.icon.docs.body":
-        "Ask how Search2o itself works, and get an answer from the documentation.",
+        "Ask how Tactet itself works, and get an answer from the documentation.",
     "welcome.icon.help.title": "Contact us",
     "welcome.icon.help.body": "Send us a message when something is not working or not clear.",
     "welcome.newSearch.title": "New search",
@@ -172,7 +172,7 @@ export const UI_TEXT_DEFAULTS = {
     "auth.clientSecretStored":
         "A secret is stored and is not shown. Leave this empty to keep it, or enter a new one to replace it.",
     "auth.removingPeople":
-        "Removing someone at your identity provider stops them starting a new session, but does not end the sessions they already have or revoke their integration tokens. Remove them in Search2o as well.",
+        "Removing someone at your identity provider stops them starting a new session, but does not end the sessions they already have or revoke their integration tokens. Remove them in Tactet as well.",
 
     "empty.agents": "No agents to display.",
     "empty.drafts": "No drafts yet. Create one to get started.",

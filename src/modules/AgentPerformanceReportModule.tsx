@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useMemo } from "react";
-import * as API from "@/orval/search2o";
+import * as API from "@/orval/tactet";
 import * as UI from "@/shared/uistate";
-import type { AgentPerformanceRow } from "@/orval/search2o.schemas";
+import type { AgentPerformanceRow } from "@/orval/tactet.schemas";
 
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";

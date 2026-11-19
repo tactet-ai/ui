@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import * as UI from "@/shared/uistate";
 import { preloadModule } from "@/shared/moduleRegistry";
-import * as API from "@/orval/search2o";
+import * as API from "@/orval/tactet";
 import { fmtLocalShort } from "@/shared/commonFuncs";
 import { usePagedList, useClientPaging, usePersistentState, PAGE_LIMIT } from "@/shared/pagedList";
 import { SortHeaderButton } from "@/shared/SortHeaderButton";
@@ -32,7 +32,7 @@ import {
 } from "@/components/ui/alert-dialog";
 
 import { Trash2, Loader2, RefreshCcw, SquarePen } from "lucide-react";
-import { type DraftItemModel } from "@/orval/search2o.schemas";
+import { type DraftItemModel } from "@/orval/tactet.schemas";
 import { Card, CardHeader, CardContent } from "@/components/ui/card";
 import { ModuleCardTitle } from "@/shared/ModuleCardTitle";
 import { errorText } from "@/shared/apiError";

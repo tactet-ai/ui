@@ -1,4 +1,4 @@
-import { AgentServerRoute } from "@/orval/search2o.schemas";
+import { AgentServerRoute } from "@/orval/tactet.schemas";
 import { uiText } from "@/shared/uiText";
 
 export const AGENT_SERVER_ROUTES = Object.values(AgentServerRoute);

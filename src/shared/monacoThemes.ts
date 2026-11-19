@@ -7,8 +7,8 @@ export function defineMonacoThemes(m: typeof monacoT): void {
         "editor.background": "#00000000",
         "editorGutter.background": "#00000000",
     };
-    m.editor.defineTheme("search2o-light", { base: "vs", inherit: true, rules: [], colors });
-    m.editor.defineTheme("search2o-dark", { base: "vs-dark", inherit: true, rules: [], colors });
+    m.editor.defineTheme("tactet-light", { base: "vs", inherit: true, rules: [], colors });
+    m.editor.defineTheme("tactet-dark", { base: "vs-dark", inherit: true, rules: [], colors });
 }
 
 export function useMonacoTheme(): string {
@@ -18,6 +18,6 @@ export function useMonacoTheme(): string {
             theme === "system" &&
             typeof document !== "undefined" &&
             document.documentElement.classList.contains("dark");
-        return theme === "dark" || systemDark ? "search2o-dark" : "search2o-light";
+        return theme === "dark" || systemDark ? "tactet-dark" : "tactet-light";
     }, [theme]);
 }

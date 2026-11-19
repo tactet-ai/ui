@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { ChevronRight } from "lucide-react";
-import type { AgentPromptModel } from "@/orval/search2o.schemas";
+import type { AgentPromptModel } from "@/orval/tactet.schemas";
 import { HoverTip } from "@/shared/HoverTip";
 import { promptRows, type PromptRow } from "@/shared/agentPrompts";
 import { uiText } from "@/shared/uiText";

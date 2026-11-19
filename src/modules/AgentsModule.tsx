@@ -1,7 +1,7 @@
 import { useMemo } from "react";
 import { HoverTip } from "@/shared/HoverTip";
-import * as API from "@/orval/search2o";
-import type { AgentItemModel } from "@/orval/search2o.schemas";
+import * as API from "@/orval/tactet";
+import type { AgentItemModel } from "@/orval/tactet.schemas";
 import * as UI from "@/shared/uistate";
 import { usePagedList, useClientPaging, usePersistentState, PAGE_LIMIT } from "@/shared/pagedList";
 import { Pager } from "@/shared/Pager";

@@ -11,7 +11,7 @@ import {
     AlertDialogTitle,
 } from "@/components/ui/alert-dialog";
 import { Button } from "@/components/ui/button";
-import * as API from "@/orval/search2o";
+import * as API from "@/orval/tactet";
 import { BackButton } from "@/shared/BackButton";
 import { errorText } from "@/shared/apiError";
 import { resetPagedList } from "@/shared/pagedList";

@@ -1,4 +1,4 @@
-import { ServiceLevel } from "@/orval/search2o.schemas";
+import { ServiceLevel } from "@/orval/tactet.schemas";
 
 const LEVEL_LABELS: Record<string, string> = {
     [ServiceLevel.free]: "Free",

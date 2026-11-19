@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { CircleCheck, Loader2, Search, TableOfContents } from "lucide-react";
-import * as API from "@/orval/search2o";
+import * as API from "@/orval/tactet";
 import { Button } from "@/components/ui/button";
 import {
     Dialog,

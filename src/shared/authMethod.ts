@@ -1,4 +1,4 @@
-import { AuthMethod } from "@/orval/search2o.schemas";
+import { AuthMethod } from "@/orval/tactet.schemas";
 
 export type SignInPlan = {
     password: boolean;

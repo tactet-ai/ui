@@ -35,20 +35,20 @@ export const PAGE_HELP: Record<string, string> = {
     "system-variables":
         "Which variables an agent can read from the 'sys' namespace, alongside the ones every agent already has. Each one is data about the person or the server that the agent would otherwise have no way to see, so it is exposed only when this account turns it on. Changes apply to runs that start after the update.",
     allowlist:
-        "The allowlist controls which functions and objects are allowed in Python expressions evaluated inside agent definitions and in the exec command. They must exist in the Python environment the Search2o server runs in: the server checks each one at startup and whenever the allowlist changes, and reports failures under Agent servers.",
+        "The allowlist controls which functions and objects are allowed in Python expressions evaluated inside agent definitions and in the exec command. They must exist in the Python environment the Tactet server runs in: the server checks each one at startup and whenever the allowlist changes, and reports failures under Agent servers.",
 
     search: "Configure the behaviour of search.",
     "secrets-encryption":
         "How values that must not appear in an agent definition are obtained and protected. Secrets covers where the server reads them from; Encryption covers the keys used to protect them. The two are saved separately.",
     secrets:
-        "Secrets are sensitive values such as API keys, tokens and database credentials that should not appear in an agent definition. Use this page to tell the Search2o server how to load them from its environment; refer to one from an agent as {secret(“MY_API_KEY”)}. To read them from your own vault, choose the vault source and name the vault hook on the Hooks page.",
+        "Secrets are sensitive values such as API keys, tokens and database credentials that should not appear in an agent definition. Use this page to tell the Tactet server how to load them from its environment; refer to one from an agent as {secret(“MY_API_KEY”)}. To read them from your own vault, choose the vault source and name the vault hook on the Hooks page.",
     hooks: "Python functions and classes this account's agent servers call at set points: when the server starts and stops, around each agent run, when an agent is published or deleted, to store conversation state, to read secrets from a vault, to supply encryption keys, and around each LLM and API call. They are named by import path and must be installed on every agent server. They are loaded at startup, so a change takes effect after a restart; a path that cannot be loaded stops the server running agents until it is fixed.",
     "api-connection-pools":
         "How many HTTP connections agents open to APIs, how many idle ones are kept for reuse, and how long calls may take. Agents that start running after an update use the new settings; those already running do not.",
     encryption:
-        "How sensitive values are encrypted. By default Search2o manages a key for this account; override that to use end-to-end encryption with your own keys. The last key listed is the current one; keep every key that stored data still uses. With your own keys the key itself comes from the encryptionKey hook, named on the Hooks page. New agent executions use the updated settings.",
+        "How sensitive values are encrypted. By default Tactet manages a key for this account; override that to use end-to-end encryption with your own keys. The last key listed is the current one; keep every key that stored data still uses. With your own keys the key itself comes from the encryptionKey hook, named on the Hooks page. New agent executions use the updated settings.",
     "agent-server-configuration":
-        "These settings determine the security and other aspects of the Search2o servers running in your organization. All of them require a server restart to take effect, except Account name and Allowed server IPs, which take effect immediately. Changing the account name also needs a page refresh.",
+        "These settings determine the security and other aspects of the Tactet servers running in your organization. All of them require a server restart to take effect, except Account name and Allowed server IPs, which take effect immediately. Changing the account name also needs a page refresh.",
 
     "agent-performance-report":
         "Report of agent executions and any errors, from search and from the agents module.",
@@ -63,9 +63,9 @@ export const PAGE_HELP: Record<string, string> = {
     authentication:
         "Configure the built-in authentication. Changes take effect immediately. Users already signed in are not affected by changes to session duration.",
     "service-accounts":
-        "Programs that call Search2o's API on their own, each with its own role and key. A key is shown once, when it is created or rotated, and service accounts are unaffected by how people sign in.",
+        "Programs that call Tactet's API on their own, each with its own role and key. A key is shown once, when it is created or rotated, and service accounts are unaffected by how people sign in.",
     account:
-        "This account's name, and the addresses billing and Search2o use to reach it. The billing name is set by the payment provider when the account is registered and is shown here for reference.",
+        "This account's name, and the addresses billing and Tactet use to reach it. The billing name is set by the payment provider when the account is registered and is shown here for reference.",
     billing:
         "What this account is being charged: the platform, developer, storage and usage fees so far in the current period, and each closed invoice. Only the account owner of a paid account can see it.",
     "user-view":
@@ -74,7 +74,7 @@ export const PAGE_HELP: Record<string, string> = {
         "What has changed in the account and who changed it — agents published, configuration updated. Filter by type or by user to narrow the log.",
 
     profile: "View and update your profile details.",
-    docs: "Ask a question about Search2o and get an answer from the documentation. Each question is answered on its own \u2014 nothing is remembered between them, so ask a whole question rather than a follow-up.",
+    docs: "Ask a question about Tactet and get an answer from the documentation. Each question is answered on its own \u2014 nothing is remembered between them, so ask a whole question rather than a follow-up.",
 };
 
 export function pageHelpKey(title: string): string {

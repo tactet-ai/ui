@@ -1,4 +1,4 @@
-import type { ApiConnectionPoolModel, ConnectionPoolModel } from "@/orval/search2o.schemas";
+import type { ApiConnectionPoolModel, ConnectionPoolModel } from "@/orval/tactet.schemas";
 
 export type ConnectionFields = {
     maxConnections: string;

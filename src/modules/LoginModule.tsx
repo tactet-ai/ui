@@ -1,10 +1,10 @@
 import { useCallback, useEffect, useRef, useState } from "react";
-import * as API from "@/orval/search2o";
+import * as API from "@/orval/tactet";
 import type {
     BaseResponseModel,
     CreatePasswordWithEmailCodeModel,
     LoginResponseModel,
-} from "@/orval/search2o.schemas";
+} from "@/orval/tactet.schemas";
 import { toast } from "sonner";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Alert, AlertTitle } from "@/components/ui/alert";

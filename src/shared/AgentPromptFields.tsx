@@ -1,5 +1,5 @@
 import { forwardRef, useImperativeHandle, useRef } from "react";
-import type { PromptScope } from "@/orval/search2o.schemas";
+import type { PromptScope } from "@/orval/tactet.schemas";
 import { Textarea } from "@/components/ui/textarea";
 import {
     Select,

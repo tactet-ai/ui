@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useState } from "react";
-import * as API from "@/orval/search2o";
-import { InvoiceStatus, type Invoice } from "@/orval/search2o.schemas";
+import * as API from "@/orval/tactet";
+import { InvoiceStatus, type Invoice } from "@/orval/tactet.schemas";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Alert, AlertTitle } from "@/components/ui/alert";
 import {
@@ -169,7 +169,7 @@ export default function BillingModule() {
                 {!loading && shown ? (
                     <div className="overflow-hidden rounded-2xl border bg-surface shadow-sm">
                         <div className="flex flex-wrap items-start justify-between gap-4 border-b px-6 py-5">
-                            <div className="text-lg font-semibold tracking-tight">Search2o</div>
+                            <div className="text-lg font-semibold tracking-tight">Tactet</div>
                             <div className="flex flex-col items-end gap-1.5">
                                 <div className="text-[11px] font-semibold uppercase tracking-[0.18em] text-muted-foreground">
                                     {isCurrent ? "Current period" : "Invoice"}

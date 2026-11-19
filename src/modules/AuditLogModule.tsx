@@ -1,11 +1,7 @@
 import { useCallback, useRef, useState } from "react";
-import * as API from "@/orval/search2o";
+import * as API from "@/orval/tactet";
 import { HoverTip } from "@/shared/HoverTip";
-import {
-    AuditEntryType,
-    type GetAuditLogModel,
-    type AuditLogModel,
-} from "@/orval/search2o.schemas";
+import { AuditEntryType, type GetAuditLogModel, type AuditLogModel } from "@/orval/tactet.schemas";
 import { usePagedList, useClientPaging, usePersistentState } from "@/shared/pagedList";
 import { Pager } from "@/shared/Pager";
 import { localDatetime } from "@/shared/commonFuncs";

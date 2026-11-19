@@ -25,12 +25,12 @@ const CLIENT_CERT_FIELDS = [
     {
         key: "clientCertFile",
         label: "Client certificate file",
-        placeholder: "/etc/search2o/tls/client.pem",
+        placeholder: "/etc/tactet/tls/client.pem",
     },
     {
         key: "privateKeyFile",
         label: "Private key file",
-        placeholder: "/etc/search2o/tls/client-key.pem",
+        placeholder: "/etc/tactet/tls/client-key.pem",
     },
 ] as const;
 
@@ -38,7 +38,7 @@ const CA_CERT_FIELDS = [
     {
         key: "caCertFile",
         label: "CA certificate file",
-        placeholder: "/etc/search2o/tls/proxy-ca.pem",
+        placeholder: "/etc/tactet/tls/proxy-ca.pem",
     },
 ] as const;
 

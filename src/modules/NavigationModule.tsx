@@ -1,7 +1,7 @@
 import { Suspense, useCallback, useEffect, useRef, useState, type UIEvent } from "react";
 import { HoverTip } from "@/shared/HoverTip";
 import { DeleteConversationDialog } from "@/shared/DeleteConversationDialog";
-import * as API from "@/orval/search2o";
+import * as API from "@/orval/tactet";
 import * as UI from "@/shared/uistate";
 import { LazyModules } from "@/shared/moduleRegistry";
 import { toast } from "sonner";
@@ -36,7 +36,7 @@ import { isModuleLoadError } from "@/shared/appUpdated";
 import { useSession } from "@/shared/useSession";
 import { isSearchModule, setSearchWorkspace, useSearchWorkspace } from "@/shared/searchWorkspace";
 import { onPagedListReset, resetPagedList } from "@/shared/pagedList";
-import type { SearchHistoryModel } from "@/orval/search2o.schemas";
+import type { SearchHistoryModel } from "@/orval/tactet.schemas";
 import { errorText } from "@/shared/apiError";
 import { uiText } from "@/shared/uiText";
 import { MAX_LENGTHS } from "@/shared/schemaRules";
@@ -431,9 +431,9 @@ export default function NavigationModule() {
                 type="button"
                 onClick={() => openFromRail("SearchHistory")}
                 className="px-5 pb-2 pt-5 text-left text-[17px] font-bold tracking-tight text-white"
-                aria-label="Search2o home"
+                aria-label="Tactet home"
             >
-                Search<span className="text-[#63c1b4]">2o</span>
+                Tactet
             </button>
 
             <nav
@@ -621,7 +621,7 @@ export default function NavigationModule() {
                         <DropdownMenuSeparator />
                         <DropdownMenuItem
                             onSelect={() =>
-                                window.dispatchEvent(new CustomEvent("s2o:show-welcome"))
+                                window.dispatchEvent(new CustomEvent("tactet:show-welcome"))
                             }
                         >
                             {uiText("welcome.replay")}

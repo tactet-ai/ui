@@ -1,4 +1,4 @@
-import type { ValidateDraftResponseModel } from "@/orval/search2o.schemas";
+import type { ValidateDraftResponseModel } from "@/orval/tactet.schemas";
 
 export function runStartedConversation(resp: ValidateDraftResponseModel): boolean {
     return !!resp.convid;

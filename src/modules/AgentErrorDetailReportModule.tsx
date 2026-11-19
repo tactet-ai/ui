@@ -1,8 +1,8 @@
 import { Fragment, useCallback, useEffect, useState } from "react";
-import * as API from "@/orval/search2o";
+import * as API from "@/orval/tactet";
 import * as UI from "@/shared/uistate";
 import { BackButton } from "@/shared/BackButton";
-import type { AgentErrorVersionRow, VersionErrorGroup } from "@/orval/search2o.schemas";
+import type { AgentErrorVersionRow, VersionErrorGroup } from "@/orval/tactet.schemas";
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";

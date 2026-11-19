@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useState, useRef } from "react";
 import { HoverTip } from "@/shared/HoverTip";
-import * as API from "@/orval/search2o";
-import type { ApiServerModel, AgentConfigPartRowModel, PathAdd } from "@/orval/search2o.schemas";
+import * as API from "@/orval/tactet";
+import type { ApiServerModel, AgentConfigPartRowModel, PathAdd } from "@/orval/tactet.schemas";
 import { toast } from "sonner";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";

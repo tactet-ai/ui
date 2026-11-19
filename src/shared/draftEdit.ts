@@ -1,5 +1,5 @@
 import type { ReactNode } from "react";
-import type { TraceType } from "@/orval/search2o.schemas";
+import type { TraceType } from "@/orval/tactet.schemas";
 import type { OutputCategory } from "@/shared/outputCategories";
 import { uiText } from "@/shared/uiText";
 

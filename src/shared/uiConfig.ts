@@ -22,7 +22,7 @@ function positiveNumber(value: unknown, fallback: number, key: string): number {
     const n = typeof value === "string" ? Number(value.trim()) : value;
     if (typeof n === "number" && Number.isFinite(n) && n > 0) return n;
     console.warn(
-        `Search2o: UI setting ${key}=${JSON.stringify(value)} is not valid and was ignored.`,
+        `Tactet: UI setting ${key}=${JSON.stringify(value)} is not valid and was ignored.`,
     );
     return fallback;
 }

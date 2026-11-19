@@ -8,14 +8,14 @@ import {
     useState,
 } from "react";
 import { toast } from "sonner";
-import * as API from "@/orval/search2o";
+import * as API from "@/orval/tactet";
 import {
     TraceType,
     type DraftResponseModel,
     type ValidateDraftModel,
     type ValidateDraftResponseModel,
     type ValidationResult,
-} from "@/orval/search2o.schemas";
+} from "@/orval/tactet.schemas";
 import type { AskBlockAnswers, AskBlocks } from "@/shared/AskInputsForm";
 import { hasAskBlocks } from "@/shared/askBlocks";
 import { runStartedConversation } from "@/shared/draftConversation";

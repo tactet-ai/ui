@@ -1,8 +1,8 @@
 import { useCallback, useEffect, useState } from "react";
-import * as API from "@/orval/search2o";
+import * as API from "@/orval/tactet";
 import * as UI from "@/shared/uistate";
 import { toast } from "sonner";
-import type { AgentConfigPartRowModel, LlmModel } from "@/orval/search2o.schemas";
+import type { AgentConfigPartRowModel, LlmModel } from "@/orval/tactet.schemas";
 import { ProfileTable, type ProfileColumn } from "@/shared/ProfileTable";
 import { errorText } from "@/shared/apiError";
 import { uiText } from "@/shared/uiText";

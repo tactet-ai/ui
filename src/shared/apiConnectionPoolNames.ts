@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState } from "react";
-import * as API from "@/orval/search2o";
+import * as API from "@/orval/tactet";
 import { ApiError, errorText } from "@/shared/apiError";
 import { uiText } from "@/shared/uiText";
 import { POOL_NAME, matchesRule } from "@/shared/schemaRules";

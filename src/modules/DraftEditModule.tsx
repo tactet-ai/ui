@@ -1,8 +1,8 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { toast } from "sonner";
 import { CircleCheck, Loader2, Plus, Undo2 } from "lucide-react";
-import * as API from "@/orval/search2o";
-import type { DraftResponseModel, SaveDraftNewModel } from "@/orval/search2o.schemas";
+import * as API from "@/orval/tactet";
+import type { DraftResponseModel, SaveDraftNewModel } from "@/orval/tactet.schemas";
 import { Button } from "@/components/ui/button";
 import { resetPagedList } from "@/shared/pagedList";
 import * as UI from "@/shared/uistate";

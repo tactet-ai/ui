@@ -1,4 +1,4 @@
-import type { AskInputModel, AskInputsModel } from "@/orval/search2o.schemas";
+import type { AskInputModel, AskInputsModel } from "@/orval/tactet.schemas";
 import { defaultFor } from "@/shared/askDefaults";
 
 export type AskBlocks = { [key: string]: AskInputsModel | { [key: string]: unknown } };

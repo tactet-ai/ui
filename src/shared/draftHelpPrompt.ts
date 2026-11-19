@@ -1,4 +1,4 @@
-import type { ProfileInfoModel, ProfilesResponseModelProfiles } from "@/orval/search2o.schemas";
+import type { ProfileInfoModel, ProfilesResponseModelProfiles } from "@/orval/tactet.schemas";
 import { MAX_LENGTHS } from "@/shared/schemaRules";
 
 export const DRAFT_HELP_MIN = 8;

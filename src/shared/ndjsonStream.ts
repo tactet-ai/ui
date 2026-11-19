@@ -1,4 +1,4 @@
-import type { ErrorResponseModel } from "@/orval/search2o.schemas";
+import type { ErrorResponseModel } from "@/orval/tactet.schemas";
 import { failureMessage } from "@/shared/usageLimit";
 
 export async function readErrorMessage(res: Response): Promise<string> {

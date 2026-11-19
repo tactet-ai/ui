@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState } from "react";
-import * as API from "@/orval/search2o";
+import * as API from "@/orval/tactet";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Alert, AlertTitle } from "@/components/ui/alert";
@@ -126,7 +126,7 @@ export default function ConnectModule({
                 <Logo className="h-6 w-auto" />
                 <CardTitle className="text-lg leading-snug">
                     <span className="font-semibold">{request.clientName}</span> wants to connect to
-                    your Search2o account
+                    your Tactet account
                 </CardTitle>
             </CardHeader>
 

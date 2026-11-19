@@ -1,4 +1,4 @@
-import type { ValueModel } from "@/orval/search2o.schemas";
+import type { ValueModel } from "@/orval/tactet.schemas";
 
 export type KeyValueRow = {
     id: string;

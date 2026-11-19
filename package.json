@@ -1,8 +1,8 @@
 {
-  "name": "search2o-ui",
+  "name": "tactet-ui",
   "private": true,
   "version": "0.1.0",
-  "description": "Web UI for Search2o — build, validate, publish and monitor search agents.",
+  "description": "Web UI for Tactet — build, validate, publish and monitor search agents.",
   "type": "module",
   "engines": {
     "node": "^22.12.0 || >=24.0.0"

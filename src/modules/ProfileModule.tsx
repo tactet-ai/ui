@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { useSession } from "@/shared/useSession";
-import * as API from "@/orval/search2o";
-import type { ThemeType, UserProfileModel } from "@/orval/search2o.schemas";
+import * as API from "@/orval/tactet";
+import type { ThemeType, UserProfileModel } from "@/orval/tactet.schemas";
 import { toast } from "sonner";
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";

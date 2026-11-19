@@ -22,7 +22,7 @@ export function isAbortError(e: unknown): boolean {
 
 function loadApiBaseUrl(): string {
     if (typeof document === "undefined") return "";
-    const el = document.querySelector('meta[name="search2o-ui-config"]') as HTMLMetaElement | null;
+    const el = document.querySelector('meta[name="tactet-ui-config"]') as HTMLMetaElement | null;
     const raw = el?.content?.trim();
     if (!raw) return "";
     try {

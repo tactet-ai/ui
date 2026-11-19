@@ -1,4 +1,4 @@
-import type { AskInputModel } from "@/orval/search2o.schemas";
+import type { AskInputModel } from "@/orval/tactet.schemas";
 
 export function defaultForMany(def: string | null | undefined, options: string[]): string[] {
     if (!def) return [];

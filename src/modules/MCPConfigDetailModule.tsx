@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useState, useRef } from "react";
-import * as API from "@/orval/search2o";
-import type { AgentConfigPartRowModel, McpServerModel } from "@/orval/search2o.schemas";
+import * as API from "@/orval/tactet";
+import type { AgentConfigPartRowModel, McpServerModel } from "@/orval/tactet.schemas";
 import { toast } from "sonner";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";

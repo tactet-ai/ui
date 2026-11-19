@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useState } from "react";
-import * as API from "@/orval/search2o";
-import type { CreateServiceAccountModel, ServiceAccountItemModel } from "@/orval/search2o.schemas";
-import { UserRole } from "@/orval/search2o.schemas";
+import * as API from "@/orval/tactet";
+import type { CreateServiceAccountModel, ServiceAccountItemModel } from "@/orval/tactet.schemas";
+import { UserRole } from "@/orval/tactet.schemas";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";

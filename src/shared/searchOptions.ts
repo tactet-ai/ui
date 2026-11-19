@@ -55,7 +55,7 @@ export function readSearchOptions(
     );
     if (ignored.length > 0) {
         console.warn(
-            `Search2o: search setting ${ignored.map((k) => `${k}=${JSON.stringify(obj[k])}`).join(", ")} ` +
+            `Tactet: search setting ${ignored.map((k) => `${k}=${JSON.stringify(obj[k])}`).join(", ")} ` +
                 `is not valid and was ignored.`,
         );
     }

@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from "react";
-import * as API from "@/orval/search2o";
+import * as API from "@/orval/tactet";
 import * as UI from "@/shared/uistate";
 import { BackButton } from "@/shared/BackButton";
 import { toast } from "sonner";
@@ -40,7 +40,7 @@ import { resetPagedList } from "@/shared/pagedList";
 
 import { JsonCodeBlock } from "@/shared/JsonCodeBlock";
 import { findPathRange } from "@/shared/agentPath";
-import type { AgentResponseModel, PastVersionModel } from "@/orval/search2o.schemas";
+import type { AgentResponseModel, PastVersionModel } from "@/orval/tactet.schemas";
 import { PublishedPrompts } from "@/shared/PublishedPrompts";
 import { PublishedConst } from "@/shared/ConstFields";
 import { UpdatedBy } from "@/shared/UpdatedBy";

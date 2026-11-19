@@ -6,13 +6,13 @@ export function Logo({ className = "h-6 w-auto select-none" }: { className?: str
         <>
             <img
                 src={logoLight}
-                alt="Search2o"
+                alt="Tactet"
                 className={`${className} dark:hidden`}
                 draggable={false}
             />
             <img
                 src={logoDark}
-                alt="Search2o"
+                alt="Tactet"
                 className={`${className} hidden dark:block`}
                 draggable={false}
             />

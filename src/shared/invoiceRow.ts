@@ -1,4 +1,4 @@
-import { RowKind } from "@/orval/search2o.schemas";
+import { RowKind } from "@/orval/tactet.schemas";
 
 export type RowStyle = {
     row: string;

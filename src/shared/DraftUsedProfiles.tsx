@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
-import * as API from "@/orval/search2o";
-import type { ProfilesResponseModelProfiles } from "@/orval/search2o.schemas";
+import * as API from "@/orval/tactet";
+import type { ProfilesResponseModelProfiles } from "@/orval/tactet.schemas";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Loader2, SlidersHorizontal } from "lucide-react";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";

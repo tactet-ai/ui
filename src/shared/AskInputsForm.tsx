@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import { CircleCheck } from "lucide-react";
-import type { AskInputModel } from "@/orval/search2o.schemas";
+import type { AskInputModel } from "@/orval/tactet.schemas";
 import {
     blockKey,
     flattenAskBlocks,

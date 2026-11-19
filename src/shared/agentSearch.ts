@@ -1,6 +1,6 @@
 import { useCallback, useState } from "react";
 import type { KeyboardEvent } from "react";
-import type { AgentTitleModel } from "@/orval/search2o.schemas";
+import type { AgentTitleModel } from "@/orval/tactet.schemas";
 import { FollowupBehavior, SearchBehavior } from "@/shared/searchOptions";
 
 export type MatchOutcome =

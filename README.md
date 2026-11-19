@@ -1,18 +1,18 @@
 <p align="center">
-  <a href="https://search2o.com">
-    <img src="https://search2o.com/images/og11.png" alt="Search2o: a platform to build, run, and use AI agents, with a search interface" width="600">
+  <a href="https://tactet.com">
+    <img src="https://tactet.com/images/og13.png" alt="Tactet: Model‑neutral agent platform for the enterprise" width="600">
   </a>
 </p>
 
-**Website:** [search2o.com](https://search2o.com) · **Source:** [GitHub](https://github.com/Search2o/ui) · **Docs:** [search2o.com/docs](https://search2o.com/docs/index.html) · **Skill:** [Search2o-skill](https://github.com/Search2o/search2o-skill)
+**Website:** [tactet.com](https://tactet.com) · **Source:** [GitHub](https://github.com/tactet-ai/ui) · **Docs:** [tactet.com/docs](https://tactet.com/docs/index.html) · **Skill:** [Tactet-skill](https://github.com/tactet-ai/tactet-skill)
 
-This repository contains the **Search2o UI**: the React web interface of the Search2o Agent Server. The agent server on PyPI already bundles a built copy of it.
+This repository contains the **Tactet UI**: the React web interface of the Tactet Agent Server. The agent server on PyPI already bundles a built copy of it.
 
 Many parts of this UI were generated with AI, against the agent server's REST API, so it is not actively supported. Please feel free to clone and adapt the UI, especially the end user search interface, for your needs.
 
 ## Getting started
 
-The UI needs a running Search2o Agent Server. Install and start one first, following the [agent server's Getting started](https://github.com/Search2o/agent-server#getting-started).
+The UI needs a running Tactet Agent Server. Install and start one first, following the [agent server's Getting started](https://github.com/tactet-ai/agent-server#getting-started).
 
 You need Node.js 22.18 or newer.
 
@@ -27,7 +27,7 @@ Open `http://localhost:5173`. The dev server sends `/api` to the agent server at
 API_TARGET=http://localhost:9020
 ```
 
-The first time, click **New user / Forgot password** on the sign-in dialog and enter the email you created your Search2o account with. A code is emailed to that address and no other. Enter the code, choose a password, and sign in.
+The first time, click **New user / Forgot password** on the sign-in dialog and enter the email you created your Tactet account with. A code is emailed to that address and no other. Enter the code, choose a password, and sign in.
 
 ## Building and deploying
 
@@ -42,7 +42,7 @@ Serve the whole `dist` tree, including `dist/monaco/`: the editor is self-hosted
 A built UI finds its server at runtime, from a `<meta>` tag in `index.html`, so one build works against any server:
 
 ```html
-<meta name="search2o-ui-config" content='{ "apiBase": "" }' />
+<meta name="tactet-ui-config" content='{ "apiBase": "" }' />
 ```
 
 Leave `apiBase` empty when the UI is served from the same origin as the agent server. Otherwise set it to the server's URL, and allow the UI's origin in the server's CORS settings. Every other setting comes from the agent server.

@@ -1,4 +1,4 @@
-import type { AccountModel, UpdateAccountModel } from "@/orval/search2o.schemas";
+import type { AccountModel, UpdateAccountModel } from "@/orval/tactet.schemas";
 
 export type AccountFields = Pick<
     AccountModel,

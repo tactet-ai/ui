@@ -1,4 +1,4 @@
-import { AgentConfigPart, type HooksModel } from "@/orval/search2o.schemas";
+import { AgentConfigPart, type HooksModel } from "@/orval/tactet.schemas";
 import { IMPORT_PATH, matchesRule } from "@/shared/schemaRules";
 
 export const HOOK_KEYS = [

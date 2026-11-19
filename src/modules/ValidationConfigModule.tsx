@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import * as API from "@/orval/search2o";
+import * as API from "@/orval/tactet";
 import { toast } from "sonner";
 import { useUnsavedChanges } from "@/shared/useUnsavedChanges";
 import { Card, CardHeader, CardContent } from "@/components/ui/card";
@@ -7,7 +7,7 @@ import { FieldLabel } from "@/shared/FieldLabel";
 import { useFieldHelp } from "@/shared/fieldHelp";
 import { Input } from "@/components/ui/input";
 import { Separator } from "@/components/ui/separator";
-import type { AgentValidationModel, ConfigPartResponseModel } from "@/orval/search2o.schemas";
+import type { AgentValidationModel, ConfigPartResponseModel } from "@/orval/tactet.schemas";
 import { ActionBar } from "@/shared/ActionBar";
 import { useSavedBaseline } from "@/shared/savedBaseline";
 import { ModuleCardTitle } from "@/shared/ModuleCardTitle";

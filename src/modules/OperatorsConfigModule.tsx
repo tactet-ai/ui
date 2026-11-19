@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
-import * as API from "@/orval/search2o";
+import * as API from "@/orval/tactet";
 import type {
     CompileOptions,
     ConfigPartResponseModel,
     OperatorMappingAction,
-} from "@/orval/search2o.schemas";
+} from "@/orval/tactet.schemas";
 import { Card, CardHeader, CardContent } from "@/components/ui/card";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Label } from "@/components/ui/label";

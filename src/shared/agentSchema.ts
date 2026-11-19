@@ -1,4 +1,4 @@
-import type { JsonValue } from "@/orval/search2o.schemas";
+import type { JsonValue } from "@/orval/tactet.schemas";
 import { fetchDocsWebOnce } from "@/shared/docsWeb";
 
 export type CommandGroup = {

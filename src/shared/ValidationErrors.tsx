@@ -1,5 +1,5 @@
 import { XCircle } from "lucide-react";
-import type { ValidationResult } from "@/orval/search2o.schemas";
+import type { ValidationResult } from "@/orval/tactet.schemas";
 import { HoverTip } from "@/shared/HoverTip";
 import { promptErrorTarget } from "@/shared/agentPrompts";
 

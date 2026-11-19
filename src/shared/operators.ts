@@ -1,4 +1,4 @@
-import type { OperatorMappingAction, OperatorMappingModel } from "@/orval/search2o.schemas";
+import type { OperatorMappingAction, OperatorMappingModel } from "@/orval/tactet.schemas";
 
 export type OperatorKey = keyof OperatorMappingModel;
 

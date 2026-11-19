@@ -1,4 +1,4 @@
-import { SysVariables } from "@/orval/search2o.schemas";
+import { SysVariables } from "@/orval/tactet.schemas";
 import { uiText } from "@/shared/uiText";
 
 export const OPTIONAL_SYS_VARIABLES: SysVariables[] = Object.values(SysVariables);

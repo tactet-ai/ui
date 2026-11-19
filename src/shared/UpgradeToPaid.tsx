@@ -1,5 +1,5 @@
 import { useState } from "react";
-import * as API from "@/orval/search2o";
+import * as API from "@/orval/tactet";
 import { Button } from "@/components/ui/button";
 import {
     AlertDialog,

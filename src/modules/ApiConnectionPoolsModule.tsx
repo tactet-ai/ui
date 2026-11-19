@@ -1,11 +1,11 @@
 import { useCallback, useEffect, useState } from "react";
-import * as API from "@/orval/search2o";
+import * as API from "@/orval/tactet";
 import type {
     ApiConnectionPoolModel,
     ApiConnectionPoolsModel,
     ApiConnectionPoolsModelPools,
     ConfigPartResponseModel,
-} from "@/orval/search2o.schemas";
+} from "@/orval/tactet.schemas";
 import { toast } from "sonner";
 import { useUnsavedChanges } from "@/shared/useUnsavedChanges";
 

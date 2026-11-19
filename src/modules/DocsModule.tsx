@@ -1,6 +1,6 @@
 import { useCallback, useRef, useState } from "react";
 import type { KeyboardEvent } from "react";
-import * as API from "@/orval/search2o";
+import * as API from "@/orval/tactet";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
@@ -104,7 +104,7 @@ export default function DocsModule() {
                                 rows={3}
                                 className="min-h-24 resize-none text-left text-base leading-relaxed placeholder:text-sm"
                                 placeholder={uiText("docs.placeholder")}
-                                aria-label="Your question about Search2o"
+                                aria-label="Your question about Tactet"
                                 disabled={asking}
                             />
 

@@ -1,12 +1,12 @@
 import { useState, useEffect } from "react";
 import { HoverTip } from "@/shared/HoverTip";
-import * as API from "@/orval/search2o";
+import * as API from "@/orval/tactet";
 import type {
     ConfigPartResponseModel,
     EncryptionKey,
     EncryptionModel,
     EncryptionSource,
-} from "@/orval/search2o.schemas";
+} from "@/orval/tactet.schemas";
 import { toast } from "sonner";
 import { useUnsavedWork } from "@/shared/sessionExpiry";
 

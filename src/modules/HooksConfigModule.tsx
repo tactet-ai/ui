@@ -1,10 +1,6 @@
 import { useState, useEffect } from "react";
-import * as API from "@/orval/search2o";
-import type {
-    AgentConfigPart,
-    ConfigPartResponseModel,
-    HooksModel,
-} from "@/orval/search2o.schemas";
+import * as API from "@/orval/tactet";
+import type { AgentConfigPart, ConfigPartResponseModel, HooksModel } from "@/orval/tactet.schemas";
 import { Card, CardHeader, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";

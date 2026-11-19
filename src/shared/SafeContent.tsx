@@ -1,7 +1,7 @@
 import React from "react";
 import DOMPurify from "dompurify";
 import MarkdownIt from "markdown-it";
-import type { ContentPartApi } from "@/orval/search2o.schemas";
+import type { ContentPartApi } from "@/orval/tactet.schemas";
 
 const md = new MarkdownIt({
     html: true,

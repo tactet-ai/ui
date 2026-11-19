@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import * as API from "@/orval/search2o";
+import * as API from "@/orval/tactet";
 
 let cached: string | null = null;
 let inflight: Promise<string | null> | null = null;

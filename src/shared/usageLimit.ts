@@ -1,4 +1,4 @@
-import type { ErrorResponseModel } from "@/orval/search2o.schemas";
+import type { ErrorResponseModel } from "@/orval/tactet.schemas";
 import { fmtLocalShort } from "@/shared/commonFuncs";
 
 const SECONDS_CEILING = 1e11;

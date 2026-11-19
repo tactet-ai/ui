@@ -50,7 +50,7 @@ export function AppUpdatedScreen() {
                         aria-hidden
                     />
                     <div className="min-w-0 space-y-1">
-                        <CardTitle className="text-base">Search2o has been updated</CardTitle>
+                        <CardTitle className="text-base">Tactet has been updated</CardTitle>
                         <CardDescription>
                             A new version was released while this tab was open, so part of the app
                             could no longer be loaded. Reloading picks up the new version; nothing
@@ -82,7 +82,7 @@ export function AppErrorScreen() {
                         <div className="min-w-0 space-y-1">
                             <CardTitle className="text-base">Something went wrong</CardTitle>
                             <CardDescription>
-                                Search2o hit an unexpected error and could not continue. Reloading
+                                Tactet hit an unexpected error and could not continue. Reloading
                                 usually clears it.
                             </CardDescription>
                         </div>

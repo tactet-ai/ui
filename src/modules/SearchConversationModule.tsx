@@ -1,11 +1,11 @@
 import { type KeyboardEvent, useEffect, useMemo, useRef, useState } from "react";
-import * as API from "@/orval/search2o";
+import * as API from "@/orval/tactet";
 import type {
     ContentPartApi,
     ConversationElementModel,
     ExecAgentResponseModel,
     ExecuteAgentModel,
-} from "@/orval/search2o.schemas";
+} from "@/orval/tactet.schemas";
 import { toast } from "sonner";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";

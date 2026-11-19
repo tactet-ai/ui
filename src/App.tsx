@@ -9,7 +9,7 @@ import { AppToaster } from "@/shared/AppToaster";
 import { ErrorBoundary } from "@/shared/ErrorBoundary";
 import { AppErrorScreen, AppUpdatedScreen } from "@/shared/ErrorScreens";
 import { isModuleLoadError } from "@/shared/appUpdated";
-import * as API from "@/orval/search2o";
+import * as API from "@/orval/tactet";
 import { toast } from "sonner";
 import { clearConnectId, connectIdFrom } from "@/shared/connectRequest";
 import { hadSsoReturn, suppressAutoSso, takeStashedConnectId } from "@/shared/ssoSignIn";
@@ -52,7 +52,7 @@ function UnreachableScreen({ onRetry }: { onRetry: () => void }) {
                                 </div>
 
                                 <CardDescription className="text-sm leading-relaxed">
-                                    The UI couldn’t connect to the Search2o agent server. Verify the
+                                    The UI couldn’t connect to the Tactet agent server. Verify the
                                     server is running and reachable from your network, then try
                                     again.
                                 </CardDescription>
@@ -146,8 +146,8 @@ function Shell() {
 
     useEffect(() => {
         const show = () => setWelcomeOpen(true);
-        window.addEventListener("s2o:show-welcome", show);
-        return () => window.removeEventListener("s2o:show-welcome", show);
+        window.addEventListener("tactet:show-welcome", show);
+        return () => window.removeEventListener("tactet:show-welcome", show);
     }, []);
 
     const [connectId] = useState(() => {

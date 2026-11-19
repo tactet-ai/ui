@@ -7,17 +7,13 @@ import React, {
     useRef,
     useState,
 } from "react";
-import * as API from "@/orval/search2o";
+import * as API from "@/orval/tactet";
 import { onSessionExpired, suppressToastsBriefly } from "@/shared/sessionExpiry";
 import { usageLimitResetAt } from "@/shared/usageLimit";
 import { errorText } from "@/shared/apiError";
 import { finishPendingSso, suppressAutoSso } from "@/shared/ssoSignIn";
 import { applyUiConfig } from "@/shared/uiConfig";
-import type {
-    AccountNameResponseModel,
-    ThemeType,
-    UserProfileModel,
-} from "@/orval/search2o.schemas";
+import type { AccountNameResponseModel, ThemeType, UserProfileModel } from "@/orval/tactet.schemas";
 
 export type SessionStatus =
     "booting" | "authenticated" | "unauthenticated" | "unreachable" | "limited";
@@ -87,13 +83,13 @@ async function loadUiConfig(): Promise<void> {
     try {
         const resp = await API.getUiConfig();
         if (!resp?.success) {
-            console.warn("Search2o: getUiConfig failed; using the default UI config.", resp?.error);
+            console.warn("Tactet: getUiConfig failed; using the default UI config.", resp?.error);
             return;
         }
         applyUiConfig(resp.uiConfig);
         uiConfigLoaded = true;
     } catch (error) {
-        console.warn("Search2o: getUiConfig failed; using the default UI config.", error);
+        console.warn("Tactet: getUiConfig failed; using the default UI config.", error);
     }
 }
 

@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback, useMemo, useRef } from "react";
 import { HoverTip } from "@/shared/HoverTip";
-import * as API from "@/orval/search2o";
+import * as API from "@/orval/tactet";
 import { toast } from "sonner";
 import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -19,7 +19,7 @@ import {
     AlertDialogTrigger,
 } from "@/components/ui/alert-dialog";
 import { Copy, Key, Loader2, RefreshCw, Save, Snowflake } from "lucide-react";
-import type { GetLicenseResponseModel, FrozenInfoResponseModel } from "@/orval/search2o.schemas";
+import type { GetLicenseResponseModel, FrozenInfoResponseModel } from "@/orval/tactet.schemas";
 import { errorText } from "@/shared/apiError";
 import { uiText } from "@/shared/uiText";
 import { rotationRefusal, rotationSummary } from "@/shared/encryptionRotation";
@@ -398,7 +398,7 @@ export default function LicenseModule() {
                                     <p className="text-sm leading-relaxed text-muted-foreground">
                                         Both license keys are valid until{" "}
                                         <span>{oldExpiryLocal || "—"}</span>. You must restart your
-                                        Search2o servers with the new license key before this time.
+                                        Tactet servers with the new license key before this time.
                                     </p>
 
                                     <AlertDialog

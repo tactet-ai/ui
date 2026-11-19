@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import * as API from "@/orval/search2o";
-import type { ConfigPartResponseModel, SysVar, SysVariables } from "@/orval/search2o.schemas";
+import * as API from "@/orval/tactet";
+import type { ConfigPartResponseModel, SysVar, SysVariables } from "@/orval/tactet.schemas";
 import { Card, CardHeader, CardContent } from "@/components/ui/card";
 import { Checkbox } from "@/components/ui/checkbox";
 import {

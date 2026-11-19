@@ -1,4 +1,4 @@
-import type { UserRole } from "@/orval/search2o.schemas";
+import type { UserRole } from "@/orval/tactet.schemas";
 import { canSeeDevActions, railGroupsFor } from "@/shared/railGroups";
 import { uiText, uiTextOptional } from "@/shared/uiText";
 

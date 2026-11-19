@@ -1,4 +1,4 @@
-import type { AgentTitleModel } from "@/orval/search2o.schemas";
+import type { AgentTitleModel } from "@/orval/tactet.schemas";
 import { cn } from "@/lib/utils";
 import { CornerDownLeft, SearchX } from "lucide-react";
 import { uiText } from "@/shared/uiText";

@@ -10,7 +10,7 @@ import {
 } from "lucide-react";
 import { uiText } from "@/shared/uiText";
 import type { ComponentType } from "react";
-import { TraceType } from "@/orval/search2o.schemas";
+import { TraceType } from "@/orval/tactet.schemas";
 
 export type OutputCategory = TraceType | "progress" | "data";
 

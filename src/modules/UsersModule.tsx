@@ -1,13 +1,13 @@
 import { useCallback, useRef, useState } from "react";
 import { HoverTip } from "@/shared/HoverTip";
-import * as API from "@/orval/search2o";
+import * as API from "@/orval/tactet";
 import * as UI from "@/shared/uistate";
 import type {
     GetUsersResponseModel,
     UserItemModel,
     UserRole,
     UserRoleFacet,
-} from "@/orval/search2o.schemas";
+} from "@/orval/tactet.schemas";
 import { usePagedList, useClientPaging, usePersistentState } from "@/shared/pagedList";
 import { Pager } from "@/shared/Pager";
 

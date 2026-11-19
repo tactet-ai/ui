@@ -4,7 +4,7 @@ import { ApiError, errorText } from "@/shared/apiError";
 import { getApiBaseUrl, isAbortError } from "@/shared/commonFuncs";
 import { joinBaseAndPath, unreachable } from "@/shared/orvalFetcher";
 import { readErrorMessage, readNdjsonFrames } from "@/shared/ndjsonStream";
-import type { ContentPartApi, TraceObject, TraceType } from "@/orval/search2o.schemas";
+import type { ContentPartApi, TraceObject, TraceType } from "@/orval/tactet.schemas";
 import { reportSessionExpired } from "@/shared/sessionExpiry";
 import { uiText } from "@/shared/uiText";
 

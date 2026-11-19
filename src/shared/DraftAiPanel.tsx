@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState, type ReactNode } from "react";
-import * as API from "@/orval/search2o";
+import * as API from "@/orval/tactet";
 import { Button } from "@/components/ui/button";
 import { Alert, AlertTitle } from "@/components/ui/alert";
 import { HoverTip } from "@/shared/HoverTip";

@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useMemo, useState, useRef } from "react";
 import { HoverTip } from "@/shared/HoverTip";
-import * as API from "@/orval/search2o";
-import type { AgentConfigPartRowModel, LlmModel, DynamicDict } from "@/orval/search2o.schemas";
+import * as API from "@/orval/tactet";
+import type { AgentConfigPartRowModel, LlmModel, DynamicDict } from "@/orval/tactet.schemas";
 import { toast } from "sonner";
 
 import { Button } from "@/components/ui/button";

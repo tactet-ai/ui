@@ -1,4 +1,4 @@
-import * as API from "@/orval/search2o";
+import * as API from "@/orval/tactet";
 import { errorText } from "@/shared/apiError";
 import { exemptFromSessionExpiry } from "@/shared/orvalFetcher";
 
@@ -58,7 +58,7 @@ export function hadSsoReturn(): boolean {
     return captured !== null;
 }
 
-const NO_AUTO_KEY = "s2o.sso.noAuto";
+const NO_AUTO_KEY = "tactet.sso.noAuto";
 let noAutoInMemory = false;
 
 export function suppressAutoSso(): void {
@@ -84,7 +84,7 @@ export function autoSsoSuppressed(): boolean {
     }
 }
 
-const CONNECT_KEY = "s2o.sso.connectId";
+const CONNECT_KEY = "tactet.sso.connectId";
 
 export function stashConnectId(connectId: string): void {
     try {

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { toast } from "sonner";
-import * as API from "@/orval/search2o";
-import type { SendHelpMessageRequestModel } from "@/orval/search2o.schemas";
+import * as API from "@/orval/tactet";
+import type { SendHelpMessageRequestModel } from "@/orval/tactet.schemas";
 import { Button } from "@/components/ui/button";
 import {
     Dialog,

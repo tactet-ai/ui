@@ -58,7 +58,7 @@ export function installCommandPicker(
     let ctxIndent = "";
 
     const widget: monacoT.editor.IContentWidget = {
-        getId: () => "s2o.commandPicker",
+        getId: () => "tactet.commandPicker",
         getDomNode: () => domNode,
         allowEditorOverflow: true,
         getPosition: () =>
@@ -254,7 +254,7 @@ export function installCommandPicker(
         }
         edits[0].text = clean;
 
-        editor.executeEdits("s2o.commandPicker", edits);
+        editor.executeEdits("tactet.commandPicker", edits);
         close();
         editor.focus();
         if (caretAt) editor.setPosition(caretAt);
